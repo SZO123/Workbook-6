@@ -9,6 +9,6 @@ public class FinanceApplication {
         Valuable account2 = new BankAccount("456", "Gary", 1500);
 
         account1.deposit(100);
-        account2.deposit(100);
+        ((BankAccount) account2).deposit(100);
     }
 }
